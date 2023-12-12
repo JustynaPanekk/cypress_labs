@@ -18,7 +18,7 @@ describe('Verify product list page', () => {
   
     })
 
-    it('check that you cad add all products to the shopping cart', () => {
+    it('check that you can add all products to the shopping cart', () => {
       cy.visit('https://www.saucedemo.com')
       cy.get('.login_logo').contains('Swag Labs')
   
