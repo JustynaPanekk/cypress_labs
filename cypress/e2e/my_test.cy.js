@@ -144,8 +144,9 @@ describe('Verify product list page', () => {
       const sixthProduct = products[5]
       cy.wrap(sixthProduct).find('.inventory_item_name').contains('Test.allTheThings() T-Shirt (Red)');
       cy.wrap(sixthProduct).find('.inventory_item_price').contains('$15.99');
-      cy.wrap(sixthProduct).find('#add-to-cart-test.allthethings()-t-shirt-(red)').contains('Add to cart');
+      cy.wrap(sixthProduct).find('button.btn').contains('Add to cart');
     })
   })
 
-})
+
+  })
